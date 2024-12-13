@@ -26,6 +26,7 @@ Construir un Departamento técnico con los recursos que le permitan enfocar sus 
 |imet| - | En progreso | Desarrollar funciones que incorporen un uso más amigable con el usuario (programadores) para la consulta de datos, creación rápida de mapas y tablas, y conexión con la nube de Google.| [imet](https://github.com/Ciencia-de-Datos-Meteorologia/imet) |
 |Administración de servidores| - | Terminado en el equipo actual, en espera de nuevos servidores. Mantenimiento y nuevas incorporaciones. | Instalar los sistemas operativos en los servidores y habilitar los usuarios y máquinas virtuales requeridas por las secciones.| [sisadmin](proyectos/sisadmin.md) |
 |Clases y plantillas de LaTeX | - | Terminado. Mantenimiento y nuevas incorporaciones. | Dar mantenimiento, actualizaciones y fabricar nuevas plantillas y clases de LaTeX para el uso del Departamento.|[LaTeX_Templates_project](https://github.com/orgs/Ciencia-de-Datos-Meteorologia/projects/1/)|
+|Tests de funcionamiento| Practicantes | Sin iniciar | Fabricar programas de testeo utilizando [pytest](https://docs.pytest.org/en/stable/), [unittest](https://docs.python.org/3/library/unittest.html) o similar, con el fin de probar la funcionalidad y consistencia de los programas. Especialmente dirigido a consultas y almacenamiento de datos en la base de datos "Data Warehouse", ya que es importante verificar que la información guardada sea la correcta y su estructura se esté almacenando de la manera esperada. | [pytest](https://docs.pytest.org/en/stable/), [unittest](https://docs.python.org/3/library/unittest.html) |
 
 
 
@@ -41,4 +42,6 @@ Construir un Departamento técnico con los recursos que le permitan enfocar sus 
 
 ## Otras ideas
 
-- Releases
+- **Releases:** Trabajar los proyectos con número de versión y nombre (vMAJOR.MINOR.BUGFIX ColorFriut), donde el nombre cambie cada vez que se realice un cambio de versión mayor en el producto. 
+- **Uso de Machine Learning para establecer parametros de modelación dinámica:** Una vez establecida la base de datos, se puede hacer uso de Machine Learning para analizar los conjuntos de parámetros de entrada, las salidas de pronóstico (WRF,RegCM, entre otros), y los valores de registro, para entrenar modelos que ayuden a establecer los valores de configuración de parámetros de entrada. Por ejemplo, un aprendizaje reforzado que busque cambiar los valores de los parámetros de entrada, ejecute el modelo dinámico (WRF por ejemplo) con estos parámetros, y después compare la salida con los registros, y repita el procedimiento hasta ir aprendiendo como corregir los valores en los parámetros de entrada.
+- **Uso de Machine Learning para post-procesamiento de modelos:** Utilizar las salidas de los modelos en retrospectiva, y los valores de los registros, para entrenar modelos de ML que puedan definir ajustes estadísticos a las salidas del modelo, mejorando la predictibilidad.
