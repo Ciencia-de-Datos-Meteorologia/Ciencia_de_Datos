@@ -42,6 +42,6 @@ Construir un Departamento técnico con los recursos que le permitan enfocar sus 
 
 ## Otras ideas
 
-- **Releases:** Trabajar los proyectos con número de versión y nombre (vMAJOR.MINOR.BUGFIX ColorFriut), donde el nombre cambie cada vez que se realice un cambio de versión mayor en el producto. 
+- **Releases:** Trabajar los proyectos con número de versión y nombre (vMAJOR.MINOR.BUGFIX ColorFruit), donde el nombre cambie cada vez que se realice un cambio de versión mayor en el producto. 
 - **Uso de Machine Learning para establecer parametros de modelación dinámica:** Una vez establecida la base de datos, se puede hacer uso de Machine Learning para analizar los conjuntos de parámetros de entrada, las salidas de pronóstico (WRF,RegCM, entre otros), y los valores de registro, para entrenar modelos que ayuden a establecer los valores de configuración de parámetros de entrada. Por ejemplo, un aprendizaje reforzado que busque cambiar los valores de los parámetros de entrada, ejecute el modelo dinámico (WRF por ejemplo) con estos parámetros, y después compare la salida con los registros, y repita el procedimiento hasta ir aprendiendo como corregir los valores en los parámetros de entrada.
 - **Uso de Machine Learning para post-procesamiento de modelos:** Utilizar las salidas de los modelos en retrospectiva, y los valores de los registros, para entrenar modelos de ML que puedan definir ajustes estadísticos a las salidas del modelo, mejorando la predictibilidad.
