@@ -31,6 +31,11 @@ En resumen, un data warehouse es un repositorio central de datos integrados y de
 | `pronosticos.raster.source` | [Modelos de pronóstico](http://iridl.ldeo.columbia.edu/SOURCES/). Son varias entradas para cada `source`, estos son obtenidos de las fuentes oficiales de los modelos que se utilizan en la ejecución de NextGen. Actualmente están almancenados en la librería de datos del IRI, pero esta podría dejar de dar soporte, por lo que deben ser trasladados de manera local progresivamente. | :x: |
 | `pronosticos.puntos.???` | Otros posibles datos de modelos y pronósticos puntuales (por estación por ejemplo). | :grey_question: |
 | `pronosticos.raster.???` | Otros posibles datos de modelos y pronósticos en formato raster | :grey_question: |
+| `pronosticos.shapes.???` | Otros posibles datos de modelos y pronósticos en formato shapefile | :grey_question: |
+| `herramientas.shapes.???` | Shapefiles para realizar mapas | :grey_question: |
+| `index` | Índice explicando los contenidos de las tablas y views de la base de datos. |
+
+Todas las tablas y categorías pueden tener asociadas views para distintos usuarios y aplicaciones. La descripción de estas views también debe estar contenida en el índice (`index`). También pueden haber vistas del mismo índice, asociadas a tipos de usuario.
 
 ## Uso de [PostGIS](https://postgis.net/)
 
