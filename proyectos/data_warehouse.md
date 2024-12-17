@@ -18,14 +18,19 @@ En resumen, un data warehouse es un repositorio central de datos integrados y de
 
 | Nombre | Descripción | Agregado |
 | ------ | ----------- | -------- |
-| registros.puntos.convencionales | Son los datos de registro de las estaciones convencionales. Esto incluye registros, metadata, vacaciones y errores. | :heavy_check_mark: |
-| registros.puntos.icc | Son los datos de registro de las estaciones icc. Esto incluye registros, metadata, vacaciones y errores. | :heavy_check_mark: |
-| registros.puntos.alfa | Son los datos de registro de las estaciones alfa. Esto incluye registros, metadata, vacaciones y errores. | :heavy_check_mark: |
-| registros.puntos.davis | Son los datos de registro de las estaciones automáticas davis. Esto incluye registros y metadata. | :x: |
-| registros.puntos.uicn | Son los datos de registro de las estaciones de UICN. Esto incluye registros y metadata. | :x: |
-| registros.raster.goes | Son los datos de registro satelital en raster de las distintas bandas del GOES. Esto incluye registros y metadata. | :x: |
-| registros.raster.??? | Otros posibles registros satelitales en formato raster. | :x: |
-| registros.puntos.??? | Otros posibles registros de estaciones. | :x: |
+| `registros.puntos.convencionales` | Son los datos de registro de las estaciones convencionales. Esto incluye registros, metadata, vacaciones y errores. | :heavy_check_mark: |
+| `registros.puntos.icc` | Son los datos de registro de las estaciones icc. Esto incluye registros, metadata, vacaciones y errores. | :heavy_check_mark: |
+| `registros.puntos.alfa` | Son los datos de registro de las estaciones alfa. Esto incluye registros, metadata, vacaciones y errores. | :heavy_check_mark: |
+| `registros.puntos.davis` | Son los datos de registro de las estaciones automáticas davis. Esto incluye registros y metadata. | :x: |
+| `registros.puntos.uicn` | Son los datos de registro de las estaciones de UICN. Esto incluye registros y metadata. | :x: |
+| `registros.raster.goes` | Son los datos de registro satelital en raster de las distintas bandas del [GOES](https://www.star.nesdis.noaa.gov/GOES/sector.php?sat=G16&sector=cam). Esto incluye registros y metadata. | :x: |
+| `registros.raster.???` | Otros posibles registros satelitales en formato raster. | :grey_question: |
+| `registros.puntos.???` | Otros posibles registros de estaciones. | :grey_question: |
+| `pronosticos.raster.wrf` | Son los raster de salida de ejecuciones del modelo WRF. Además se incluyen los valores de parámetros de entrada de ejecución | :x: |
+| `pronosticos.raster.nextgen` | Son los raster de salida de ejecuciones de NextGen. Además se incluyen los valores de parámetros de entrada de ejecución | :x: |
+| `pronosticos.raster.source` | [Modelos de pronóstico](http://iridl.ldeo.columbia.edu/SOURCES/). Son varias entradas para cada `source`, estos son obtenidos de las fuentes oficiales de los modelos que se utilizan en la ejecución de NextGen. Actualmente están almancenados en la librería de datos del IRI, pero esta podría dejar de dar soporte, por lo que deben ser trasladados de manera local progresivamente. | :x: |
+| `pronosticos.puntos.???` | Otros posibles datos de modelos y pronósticos puntuales (por estación por ejemplo). | :grey_question: |
+| `pronosticos.raster.???` | Otros posibles datos de modelos y pronósticos en formato raster | :grey_question: |
 
 ## Uso de [PostGIS](https://postgis.net/)
 
