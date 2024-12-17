@@ -27,9 +27,8 @@ Construir un Departamento técnico con los recursos que le permitan enfocar sus 
 |Administración de servidores| - | Terminado en el equipo actual, en espera de nuevos servidores. Mantenimiento y nuevas incorporaciones. | Instalar los sistemas operativos en los servidores y habilitar los usuarios y máquinas virtuales requeridas por las secciones.| [sysadmin](proyectos/sysadmin.md) |
 |Clases y plantillas de LaTeX | - | Terminado. Mantenimiento y nuevas incorporaciones. | Dar mantenimiento, actualizaciones y fabricar nuevas plantillas y clases de LaTeX para el uso del Departamento.|[LaTeX_Templates_project](https://github.com/orgs/Ciencia-de-Datos-Meteorologia/projects/1/)|
 |Tests de funcionamiento| Practicantes | Sin iniciar | Fabricar programas de testeo utilizando [pytest](https://docs.pytest.org/en/stable/), [unittest](https://docs.python.org/3/library/unittest.html) o similar, con el fin de probar la funcionalidad y consistencia de los programas. Especialmente dirigido a consultas y almacenamiento de datos en la base de datos "Data Warehouse", ya que es importante verificar que la información guardada sea la correcta y su estructura se esté almacenando de la manera esperada. | [pytest](https://docs.pytest.org/en/stable/), [unittest](https://docs.python.org/3/library/unittest.html) |
-|DNS|-| En progreso | Realizar un servidor DNS con los nombres de las computadoras del Departamento. | [dns]
-(proyectos/dns.md) |
-
+|DNS|-| En progreso | Realizar un servidor DNS con los nombres de las computadoras del Departamento. | [dns](/proyectos/dns.md) |
+|Gráfico de barras de acumulados del mes | - | Terminado. Montar en servidor para ejecución automática | Realiza el gráfico de barras de acumulados del mes hasta la fecha por estación, comparados con la climatología. | [est_acum_bar](https://github.com/Aplicaciones-Climaticas-INSIVUMEH/est_acum_bar) | 
 
 ## Plan 2025 - 2026
 
